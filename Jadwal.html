@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jadwal - BlushFit Pilates</title>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #fffafc;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: #f2e2d5;
+      color: #4a3a3a;
+      padding: 18px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #4a3a3a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 18px;
+    }
+
+    main h2 {
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 1.8rem;
+    }
+
+    main p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* TABLE */
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 18px;
+    }
+
+    thead {
+      background-color: #f2e2d5;
+      color: #4a3a3a;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #fff5ee;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      padding: 6px 14px;
+      background-color: hsl(37, 100%, 87%);
+      color: #4a3a3a;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #f2e2d5;
+    }
+
+    /* NOTE */
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #f2e2d5;
+      color: #4a3a3a;
+      text-align: center;
+      padding: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header data-aos="fade-down">
+    <h1>BlushFit Pilates</h1>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h2 data-aos="fade-up">Jadwal Kelas Mingguan</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Pilih kelas yang sesuai lalu klik "Daftar" untuk menuju formulir pendaftaran.
+    </p>
+
+    <div class="table-wrap" data-aos="fade-up" data-aos-delay="200">
+      <table aria-label="Jadwal kelas pilates">
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Kelas</th>
+            <th>Instruktur</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin</td>
+            <td>06:00 - 07:00</td>
+            <td>Kelas Pagi (Level Pemula)</td>
+            <td>Anastasya</td>
+            <td><a class="btn" href="pendaftaran.html">Daftar</a></td>
+          </tr>
+          <tr>
+            <td>Selasa</td>
+            <td>18:00 - 19:00</td>
+            <td>Kelas Online (Interaktif)</td>
+            <td>Aqiilah</td>
+            <td><a class="btn" href="pendaftaran.html">Daftar</a></td>
+          </tr>
+          <tr>
+            <td>Rabu</td>
+            <td>07:30 - 08:30</td>
+            <td>Kelas Pagi (Level Menengah)</td>
+            <td>Rica</td>
+            <td><a class="btn" href="pendaftaran.html">Daftar</a></td>
+          </tr>
+          <tr>
+            <td>Kamis</td>
+            <td>19:00 - 20:00</td>
+            <td>Kelas Malam (Relax)</td>
+            <td>Zarqa</td>
+            <td><a class="btn" href="pendaftaran.html">Daftar</a></td>
+          </tr>
+          <tr>
+            <td>Sabtu</td>
+            <td>09:00 - 10:00</td>
+            <td>Workshop Instruktur</td>
+            <td>Tim Pilates</td>
+            <td><a class="btn" href="pendaftaran.html">Daftar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note" data-aos="fade-up" data-aos-delay="300">
+      Catatan: Jadwal bisa berubah — cek kembali atau hubungi kami jika ingin konfirmasi.
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up">
+    <p>Cat Lovers &copy; 2025</p>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 900 });
+  </script>
+</body>
+</html>
